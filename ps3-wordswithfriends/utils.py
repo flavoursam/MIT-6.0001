@@ -65,8 +65,6 @@ def updated_hand(hand, word):
             result[char] -= 1
         else:
             result[char] = 0
-    if result.get(char, 0) < 1:
-        return clean_hand(result)
     return clean_hand(result)
 
 
