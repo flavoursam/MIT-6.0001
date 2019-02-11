@@ -127,7 +127,6 @@ def hangman(secret_word):
 	warnings_remaining = 3
 	letters_guessed = []
 	print("You have", warnings_remaining, "warnings left.")
-
 	while guesses_remaining > 0:
 		partial = get_guessed_word(secret_word, letters_guessed)
 		print("-------------")
@@ -258,6 +257,7 @@ def hangman_with_hints(secret_word):
 	warnings_remaining = 3
 	letters_guessed = []
 	print("You have", warnings_remaining, "warnings left.")
+	print("Input '*' to get a list of possible word matches.")
 
 	while guesses_remaining > 0:
 		# instance of secret word ie. the current guess of the word

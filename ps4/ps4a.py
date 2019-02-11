@@ -22,8 +22,12 @@ def get_permutations(sequence):
     Note: depending on your implementation, you may return the permutations in
     a different order than what is listed here.
     '''
+    if len(sequence) == 1:
+        return sequence
+    else:
+        return sequence[:0] + sequence[:-1]
 
-    pass #delete this line and replace with your code here
+
 
 if __name__ == '__main__':
    example_input = 'abc'
